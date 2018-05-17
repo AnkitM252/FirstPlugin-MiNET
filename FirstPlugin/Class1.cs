@@ -10,7 +10,7 @@ namespace FirstPlugin
     {
         protected override void OnEnable()
         {
-            LogManager.GetLogger("[FirstPlugin] FirstPlugin enabled!");
+            LogManager.GetLogger(typeof (Class1)).InfoFormat("[FirstPlugin] FirstPlugin enabled!");
         }
 
         [Command(Description = "hello command description", Name = "hello")]
